@@ -115,6 +115,19 @@ main li{margin:0 0 6px}
   h2{font-size:24px}
   h1{font-size:32px}
 }
+/*nav2*/
+:root{--wine:#6e2333}
+@media (prefers-color-scheme: dark){:root{--wine:#e39aa6}}
+nav .name{color:var(--wine);font-size:18px;letter-spacing:-.01em}
+nav a:not(.name){padding:4px 10px;border-radius:999px;transition:background .15s,color .15s}
+nav a:not(.name):hover,nav a[aria-current]{background:var(--accent-soft);color:var(--accent)}
+nav .wrap{gap:8px}
+@media(max-width:600px){nav .wrap{gap:0;padding:0 12px;justify-content:space-between}nav a:not(.name){padding:4px 6px;font-size:13.5px}}
+.wb{background:#f8f1f2;border-left:3px solid #8c3a4a;border-radius:0 6px 6px 0;padding:12px 18px;max-width:720px}
+.wb p,.wb ul{margin:0}.wb li{margin:0 0 6px}.wb li:last-child{margin:0}
+.wbh{color:var(--wine)}
+.wbh::before{background:var(--wine)}
+@media (prefers-color-scheme: dark){.wb{background:#2a1a1d;border-left-color:#c46a7a}}
 </style>
 </head>
 <body>
@@ -175,8 +188,8 @@ main li{margin:0 0 6px}
   <div class="dec"><h3>Three tools compared on real documentation</h3><dl><dt>Problem</dt><dd>The shortlist had never been tested on production content.</dd><dt>Choice</dt><dd>The same fragments built in Zensical, Antora and Sphinx; 19 features checked in HTML and PDF.</dd></dl></div><div class="dec"><h3>Layers, not branches</h3><dl><dt>Problem</dt><dd>Client variants must follow the shared text without copying.</dd><dt>Choice</dt><dd>Layer folders on top of a common base, with a working prototype.</dd></dl></div><div class="dec"><h3>A DocOps role</h3><dl><dt>Problem</dt><dd>Without an owner, a pipeline decays.</dd><dt>Choice</dt><dd>A defined role with duties, boundaries and success criteria.</dd></dl></div>
 </section>
 <section>
-  <h2>Where it broke</h2>
-  <p>In some tools, client variants built as conditional text still appeared in another client’s navigation and search. Now every tool is checked for this on real fragments before it is chosen.</p>
+  <h2 class="wbh">Where it broke</h2>
+  <div class="wb"><p>In some tools, client variants built as conditional text still appeared in another client’s navigation and search. Now every tool is checked for this on real fragments before it is chosen.</p></div>
 </section>
 <section>
   <h2>Result</h2>
