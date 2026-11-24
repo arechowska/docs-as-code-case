@@ -104,6 +104,17 @@ main li{margin:0 0 6px}
 .timeline li{display:grid;grid-template-columns:110px 1fr;gap:16px}
 .timeline b{font-family:var(--mono);font-size:13px;color:var(--faint);font-weight:500;padding-top:2px}
 @media(max-width:600px){.dec dl{grid-template-columns:1fr;gap:0}.dec dt{padding-top:8px}.timeline li{grid-template-columns:1fr;gap:0}}
+/*m2*/
+@media(max-width:600px){
+  nav .wrap{gap:12px;padding:0 16px;overflow-x:visible;flex-wrap:nowrap}
+  nav a{font-size:14px}
+  main>header .lead{font-size:18px}
+  main>header{padding-top:32px}
+  main p,main li,.dec dd{font-size:16px}
+  .dec h3,h3{font-size:17px}
+  h2{font-size:24px}
+  h1{font-size:32px}
+}
 </style>
 </head>
 <body>
@@ -111,7 +122,6 @@ main li{margin:0 0 6px}
   <a class="name" href="https://arechowska.github.io/">Ina Arechowska</a>
   <a href="https://arechowska.github.io/#how">How it works</a>
   <a href="https://arechowska.github.io/#cases" aria-current="page">Case studies</a>
-  <a href="https://arechowska.github.io/writing/">Writing</a>
   <a href="https://arechowska.github.io/#about">About</a>
   <a href="https://arechowska.github.io/#contact">Contact</a>
 </div></nav>
@@ -166,6 +176,10 @@ main li{margin:0 0 6px}
 <section>
   <h2>Where it broke</h2>
   <p>In some tools, client variants built as conditional text still appeared in another client’s navigation and search. Now every tool is checked for this on real fragments before it is chosen.</p>
+</section>
+<section>
+  <h2>Result</h2>
+  <p>A working pilot: bilingual help site, PDF and in-app help from one source. 19 features compared across three tools on real documentation.</p>
 </section>
 <section>
   <h2>Code</h2>
